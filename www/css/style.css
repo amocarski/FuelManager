@@ -28,9 +28,11 @@
   background-image: none !important;
   border: none;
 }
-.bar .title {
+.platform-android .bar .title,
+.bar .title{
   color: #202858;
-  font-size: 13px;
+  font-size: 90%;
+  height: 100%;
 }
 .center {
   text-align: center;
@@ -40,26 +42,26 @@
 .m-b10 {
   margin-bottom: 10px;
 }
-.accent-color {
-  color: ;
-}
 .highlight-font {
   color: white;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 40px;
 }
 .home-row {
-  padding: 25px 0 0 0;
+  padding-top: 25px;
   margin: auto;
   width: 70%;
 }
 .minutes-value {
   width: 40%;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 0;
+}
+.duration-value {
+  width: 40%;
 }
 .seconds-value {
   width: 60%;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 10px;
 }
 .home-row input {
   border-color: transparent;
@@ -88,7 +90,7 @@
 
 
 .lap-times {
-  display: flex;
+  float: left;
 }
 #result-text {
   font-size: 20px;
@@ -140,3 +142,23 @@
 .wrapper {
   overflow:hidden !important;
 }
+
+@media (max-device-width : 480px) {
+  #home-top {
+    height: 275px;
+    padding-top: 0;
+  }
+  #home-bottom {
+    padding-top: 40px;
+  }
+  #home-count-btn {
+    top: 280px;
+  }
+  .home-row {
+    padding-top: 15px;
+  }
+  .bar {
+    height: 30px;
+  }
+}
+

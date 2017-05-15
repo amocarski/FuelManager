@@ -6,24 +6,22 @@
 
     <div id="home-top">
       <div class="home-row center">
-        <span class="highlight-font">LAP TIME</span>
+        <div class="highlight-font">LAP TIME</div>
 
-        <div class="lap-times">
-          <span class="minutes-value">
-            <input type="number" class="center" ng-model="home.min" ng-change="home.cutInputVal(home.min, 99, 'min')" >
-            <div class="label">minutes</div>
-          </span>
-          <span class="seconds-value">
-            <input type="number" class="center" ng-model="home.sec" ng-change="home.cutInputVal(home.sec, 59, 'sec')">
-            <div class="label">seconds</div>
-          </span>
+        <div class="minutes-value lap-times">
+          <input type="number" class="center" ng-model="home.min" ng-change="home.cutInputVal(home.min, 99, 'min')" >
+          <div class="label">minutes</div>
+        </div>
+        <div class="seconds-value lap-times">
+          <input type="number" class="center" ng-model="home.sec" ng-change="home.cutInputVal(home.sec, 59, 'sec')">
+          <div class="label">seconds</div>
         </div>
       </div>
 
       <div class="home-row center">
-        <span class="highlight-font">RACE DURATION</span>
-        <div class="minutes-value center">
-          <input type="number" class="center minutes-value" ng-model="home.duration" ng-change="home.cutInputVal(home.duration, 999, 'duration')">
+        <div class="highlight-font">RACE DURATION</div>
+        <div class="duration-value center">
+          <input type="number" class="center" ng-model="home.duration" ng-change="home.cutInputVal(home.duration, 999, 'duration')">
           <div class="label">minutes</div>
         </div>
       </div>
